@@ -1,7 +1,7 @@
 #include "Player.h"
 
 namespace CaveRun {
-    Player::Player(std::string _characterType, int _currentRoom, int _remainingMoves, int _healthPoints) : Character(_characterType,  _currentRoom,  _remainingMoves)
+    Player::Player(const std::string& _characterType, int _currentRoom, int _remainingMoves, int _healthPoints) : Character(_characterType,  _currentRoom,  _remainingMoves)
  {
 
     }

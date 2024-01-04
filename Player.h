@@ -1,5 +1,5 @@
 #include "Character.h"
-#include "GameObject.h"
+// #include "GameObject.h"
 
 
 namespace CaveRun {
@@ -8,6 +8,7 @@ namespace CaveRun {
         
     public:
         Player(std::string _characterType, int _currentRoom, int _remainingMoves, int _healthPoints);
+        ~Player();
     
     void onMove(GameObject &other)override;
 
@@ -26,9 +27,14 @@ namespace CaveRun {
     int Damage(int amount) const{
         return amount;
     }
+
+    std::string getCharacterType() const {
+            return Character::getCharacterType();
+    }
+
     
     
     
 
-    }
+    };
 }

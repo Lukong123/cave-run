@@ -1,31 +1,40 @@
 #include "GameObject.h"
-
+#include <string>
 
 namespace CaveRun {
     class Character : public GameObject {
         std::string characterType;
         int currentRoom;
         int remainingMoves;
-        
 
     public:
-        Character(std::string _characterType, int _currentRoom, int remainingMoves);
+        Character(std::string _characterType, int _currentRoom, int _remainingMoves);
+        int Sense() const;
+        int Move() const;
+        int Update() const;
+        int resetMove();
+        std::string getCharacterType() const {
+            return characterType;
+        };
+        virtual ~Character();
 
+    };
 
-    int Sense() const{
-        return sense;
-    }
     
-    float Move() const{
-        return move;
-    }
 
-    float Update() const{
-        return update;
-    }
+    // int Character::Sense() const {
+    //     return 0;
+    // }
 
-    float resetMove() {
-        return resetMove;
-    }
-    }
+    // int Character::Move() const {
+    //     return 0;
+    // }
+
+    // int Character::Update() const {
+    //     return 0;
+    // }
+
+    // int Character::resetMove() {
+    //     return 0;
+    // }
 }
