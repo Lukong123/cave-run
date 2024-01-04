@@ -9,7 +9,7 @@ namespace CaveRun {
         
 
     public:
-        Player(std::string _characterType, int _currentRoom, int remainingMoves);
+        Character(std::string _characterType, int _currentRoom, int remainingMoves);
 
 
     int Sense() const{
