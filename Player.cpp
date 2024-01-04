@@ -1,7 +1,7 @@
 #include "Player.h"
 
 namespace CaveRun {
-    Player::Player(std::string _characterType, int _currentRoom, int _remainingMoves, int _healthPoints) : Character(std::string _characterType, int _currentRoom, int remainingMoves)
+    Player::Player(std::string _characterType, int _currentRoom, int _remainingMoves, int _healthPoints) : Character(_characterType,  _currentRoom,  _remainingMoves)
  {
 
     }
@@ -13,4 +13,15 @@ namespace CaveRun {
     }
 }
 
+Player::Player(std::string _characterType, int _currentRoom, int _remainingMoves, int _healthPoints) {
+    this -> _currentRoom = currentRoom;
+    this -> _remainingMoves = remainingMoves;
+    // this -> 
+}
+
+// Car::Car(std::string manuf, float fuel, int reg):manufacturer(manuf), registrationNum(reg){
+//     this ->fuel = fuel;
+//     speed = 0;
+
+// }
 

@@ -1,4 +1,6 @@
+
 #include <String>
+// #include <string>
 
 namespace CaveRun {
     class GemeObject {
