@@ -8,7 +8,7 @@ namespace CaveRun {
         
     public:
         Player(std::string _characterType, int _currentRoom, int _remainingMoves, int _healthPoints);
-        ~Player();
+        // ~Player();
     
     void onMove(GameObject &other)override;
 

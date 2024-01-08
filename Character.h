@@ -16,7 +16,7 @@ namespace CaveRun {
         std::string getCharacterType() const {
             return characterType;
         };
-        virtual ~Character();
+        // virtual ~Character();
 
     };
 
