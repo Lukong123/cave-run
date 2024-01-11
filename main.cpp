@@ -1,15 +1,15 @@
-#include <iostream>
-#include "Player.h"
+// #include <iostream>
+// #include "Car.h"
 
-int main() {
-    std::cout << "Hello cave run!!!" << std::endl;
-    CaveRun::Player  player("Q", 1, 4, 5);
-    // std::string Symbol = player.characterType;
-    std::string Symbol = player.getCharacterType();
-    std::cout << "Player Symbol: " << Symbol << std::endl;
+// int main() {
+//     std::cout << "Hello car race!!!" << std::endl;
+//     Car car("Toyota", 11, 12344);
+//     float speed = car.GetSpeed();
+//     std::cout << "Speed: " << speed << std::endl;
+//     int fuelnum = car.GetFuel();
+//     std::cout << "Fuel Number: " << fuelnum << std::endl;
 
-    // int roomPosition = player.currentRoom;
-    // std::cout << "Room Number: " << roomPosition << std::endl;
+//     // Car::SwitchOn();
+//     // Car::SwitchOff();
 
-
-};
+// };
