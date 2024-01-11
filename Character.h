@@ -66,4 +66,4 @@ protected:
     int movesRemaining;
 };
 
-#endif // CHARACTER_H
+#endif

@@ -1,3 +1,4 @@
+// Game.h
 #ifndef GAME_H
 #define GAME_H
 
@@ -7,19 +8,18 @@
 
 class Game {
 public:
-Game();
-~Game();
+    Game();
+    ~Game();
+    void run();
 
-void run();
 private:
-Map map;
-Player player;
-Monster monster;
-
-void drawGame();
-void handlePlayerInput();
-void updateGame();
-bool isGameOver();
+    Map map;
+    Player player;
+    Monster monster;
+    bool isGameOver();
+    void drawGame();
+    void handlePlayerInput();
+    void updateGame();
 };
 
-#endif 
+#endif  // GAME_H

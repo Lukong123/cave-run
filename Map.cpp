@@ -1,4 +1,3 @@
-// Map.cpp
 #include "Map.h"
 #include "PoisonRoom.h"
 #include "TrapRoom.h"
@@ -18,7 +17,6 @@ void Map::createRooms() {
     rooms.push_back(new PoisonRoom(1));
     rooms.push_back(new PoisonRoom(2));
     rooms.push_back(new TrapRoom(3, 10));
-    
 }
 
 Room* Map::getRoom(int position) {
