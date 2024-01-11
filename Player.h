@@ -38,3 +38,28 @@ namespace CaveRun {
 
     };
 }
+
+// Player.h to be merged
+#ifndef PLAYER_H
+#define PLAYER_H
+
+#include "Character.h"
+
+class Player : public Character {
+public:
+    Player(Room* room);
+    ~Player();
+    Player();
+
+    void move() override;
+    void sense(Game* game) override;
+    void update() override;
+
+    void damage(int amount);
+    void poison();
+
+private:
+    int healthPoints;
+};
+
+#endif // PLAYER_H

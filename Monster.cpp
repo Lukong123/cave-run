@@ -13,4 +13,22 @@ namespace CaveRun {
     }
 }
 
+// to be merged
+#include "Monster.h"
+
+Monster::Monster(Room* room) : Character(room), healthPoints(100) {}
+
+Monster::~Monster() {}
+
+void Monster::move() {
+    // Move the monster to a new room
+}
+
+void Monster::sense(Game* game) {
+    // Sense the game state
+}
+
+void Monster::update() {
+    // Update the monster's state
+}
 

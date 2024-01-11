@@ -26,3 +26,16 @@ namespace CaveRun {
 //         : characterType(_characterType), currentRoom(_currentRoom), remainingMoves(_remainingMoves) {
 //         // Constructor implementation
 //     }
+
+
+// to be merged
+// Character.cpp
+#include "Character.h"
+
+Character::Character(Room* room) : room(room), movesRemaining(0) {}
+
+Character::~Character() {}
+
+void Character::draw() {
+    // Draw character with colored box and label
+}

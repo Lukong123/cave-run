@@ -1,22 +1,3 @@
-#include "Character.h"
-#include "GameObject.h"
-
-
-namespace CaveRun {
-    class Monster : public Character {
-        float exitRoom;
-        
-    public:
-        Monster(std::string _characterType, int _currentRoom, int _remainingMoves, int _exitRoom);
-    
-    void onMove(GameObject &other)override;
-
-    int decideMove() const{
-        return 0;
-    }
-    }
-}
-
 // Game.cpp
 #include "Game.h"
 #include <iostream>
@@ -44,7 +25,7 @@ void Game::drawGame() {
 
 void Game::handlePlayerInput() {
     // Handle player input to move the player
-    // This might involve asking for user input
+    // This might involve asking for user input or using an AI algorithm
 }
 
 void Game::updateGame() {
@@ -57,23 +38,3 @@ bool Game::isGameOver() {
     // Return true if the game is over, false otherwise
 }
 
-//to be merged
-#ifndef MONSTER_H
-#define MONSTER_H
-
-#include "Character.h"
-
-class Monster : public Character {
-public:
-    Monster(Room* room);
-    ~Monster();
-
-    void move() override;
-    void sense(Game* game) override;
-    void update() override;
-
-private:
-    int healthPoints;
-};
-
-#endif // MONSTER_H
