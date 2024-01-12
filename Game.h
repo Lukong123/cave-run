@@ -13,6 +13,7 @@ public:
     void run();
 
 private:
+// private attribute
     Map map;
     Player player;
     Monster monster;

@@ -2,8 +2,8 @@
 #include "Game.h"
 #include <iostream>
 
+// Initializing game components
 Game::Game() : map(ROWS, COLS), player(ROWS - 1, 0), monster(0, COLS - 1) {
-    // Initializing game components
 }
 
 Game::~Game() {
@@ -19,16 +19,9 @@ void Game::run() {
 }
 
 void Game::drawGame() {
-    // Clear the screen
     system("clear");
-
-    // Draw the map
     map.draw();
-
-    // Draw the player
     player.draw();
-
-    // Draw the monster
     monster.draw();
 }
 void Game::handlePlayerInput() {
@@ -51,7 +44,6 @@ void Game::handlePlayerInput() {
 
 void Game::updateGame() {
     // Update the game state
-    // This involves moving the monster and updating player and room interactions
     int monsterMove = getRandomNumber(0, 3);
     if (monsterMove == 0 && monster.getRow() > 0) {
         monster.moveUp();

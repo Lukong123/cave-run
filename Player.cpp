@@ -21,6 +21,11 @@ void Player::move() {
     }
 }
 
+void Player::damage(int amount) {
+    // Reduce player's health points by the specified amount
+    healthPoints -= amount;
+}
+
 void Player::sense(Game* game) {
     // Sense the game state
 }

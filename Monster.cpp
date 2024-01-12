@@ -1,7 +1,7 @@
 #include "Monster.h"
 #include <cstdlib>
 
-Monster::Monster(Room* room) : Character(room), healthPoints(100) {}
+Monster::Monster(Room* room) : Character(room) {}
 
 Monster::~Monster() {}
 
