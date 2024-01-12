@@ -128,7 +128,7 @@ int main() {
         }
 
         // Check if the player and monster are in the same room
-        if (playerRow == monsterRow && playerCol == monsterCol) {
+        if (playerRow == monsterRow && playerCol == monsterCol) {=
             std::cout << "Oops! Sorry, the monster caught you. Game over!" << std::endl;
             break;
         }
